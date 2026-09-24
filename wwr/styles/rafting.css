@@ -89,6 +89,10 @@ h1 {
     height: auto;
 }
 
+.hero article p span {
+    color: var(--secondary-color);
+}
+
 footer {
     border-top: 1px dotted #333;
     text-align: center;
