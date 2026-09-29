@@ -7,7 +7,7 @@
     /* dark slate blue*/
     --accent2-color: #e9c46a;
     /* light golden yellow*/
-    --heading-font: "Time New Roman", "Georgia", serif;
+    --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
@@ -48,7 +48,7 @@ article {
 .history {
     display: grid;
     /* align-items: center; */
-    grid-template-columns: 2r 1fr 2fr;
+    grid-template-columns: 2fr 1fr 2fr;
 
 }
 
@@ -136,7 +136,7 @@ header img {
 .navigation {
     display: flex;
     list-style: none;
-    justify-self: space-evenly;
+    justify-content: space-evenly;
 }
 
 .navigation a {
