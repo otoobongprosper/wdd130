@@ -211,6 +211,10 @@ header img {
     /* height: auto; */
 }
 
+.socialmedia a {
+    text-decoration: none;
+}
+
 .hero article p span {
     color: var(--accent2-color);
 }
