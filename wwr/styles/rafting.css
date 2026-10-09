@@ -261,6 +261,7 @@ footer {
 .intro address a {
     text-decoration: none;
     font-weight: bold;
+    color: black;
 }
 
 .content {
@@ -366,18 +367,6 @@ footer {
     margin-bottom: 15px;
 }
 
-div h2 {
-    background-color: #055a05;
-    color: #fff;
-    padding: 2px;
-    margin-top: 1rem;
-    text-align: center;
-    font-size: 2rem;
-    border: 1px solid #333;
-    border-radius: 8px;
-
-}
-
 .employee-section {
     border: 2px solid #aaa;
     background-color: #f7f7f7;
@@ -388,7 +377,9 @@ div h2 {
 .employee-section h2 {
     text-align: center;
     margin-bottom: 5px;
-    background-color: var(--secondary-color)
+    background-color: var(--secondary-color);
+    color: black;
+
 }
 
 .employees {
