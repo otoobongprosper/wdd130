@@ -1,0 +1,36 @@
+table {
+    border-collapse: collapse;
+    font-family: sans-serif;
+    border: 2px solid rgb(160 160 160);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+thead tr,
+tfoot tr {
+    background-color: #000;
+    color: #fff;
+
+}
+
+th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+    text-align: center;
+}
+
+form {
+    background-color: rgb(220, 218, 213);
+    font-family: sans-serif;
+    border: 2px solid #000;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+label {
+    font-weight: 700;
+
+}

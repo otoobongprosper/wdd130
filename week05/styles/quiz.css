@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+
+}
+
+header,
+footer {
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem;
+    color: rgb(40, 43, 43);
+    font-size: 1.5rem;
+
+}
+
+form {
+    width: 650px;
+    display: grid;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: ipx solid black;
+    padding: 1rem;
+    background-color: rgb(229, 218, 205);
+}
+
+fieldset {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #333;
+    gap: 4rem;
+
+}
+
+legend {
+
+    color: navy;
+    padding: 0.5rem;
+}
+
+input,
+label,
+select,
+textarea,
+button,
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+label {
+    padding-right: 0.3rem;
+    /* text-align: center; */
+
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    /* width: 100%; */
+}
+
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    vertical-align: bottom;
+}
+
+button {
+    width: 100%;
+    background-color: navy;
+    color: #fff;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: 1px solid black;
+}
+
+button:hover {
+    background-color: rgb(52, 63, 59);
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+
+.item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}

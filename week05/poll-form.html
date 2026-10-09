@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning how to create forms</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+    <header>
+        <h1>User Poll Forms</h1>
+    </header>
+    <main>
+
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <div class="form-item column2">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="fullname" id="fullname" required>
+                </div>
+
+                <div class="form-item column2">
+                    <label for="useremail">Email Address</label>
+                    <input type="email" name="useremail" id="useremail" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="5">Others</option>
+                    </select>
+                </div>
+                <div class="form-item column1">
+                    <label for="pet"> Do you have a household pet?</label>
+                    <input type="checkbox" name="pet" id="pet">
+                </div>
+
+                <div class="form-item column1">
+                    <label for="feedback">List the places you have lived</label><br>
+                    <textarea name="feedback" id="feedback" rows="6"
+                      placeholder="e.g; Port Harcourt, Abuja, Lagos..."></textarea>
+                </div>
+            </fieldset>
+            <div class="butt">
+                <button type="button">Submit Poll</button>
+            </div>
+        </form>
+
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

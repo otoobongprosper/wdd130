@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Structure</title>
+    <link rel="stylesheet" href="styles/table.css">
+</head>
+
+<body>
+    <h1>Table Exercise Example</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>League</th>
+                <th>Team</th>
+                <th>Record</th>
+                <th>Player Count</th>
+            </tr>
+        </thead>
+        <tr>
+            <th rowspan="2">Southern</th>
+            <td>Parana</td>
+            <td>52-19</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Catarina</td>
+            <td>49-24</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <th rowspan="3">Western</th>
+            <td>Lacerda</td>
+            <td>92-70</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>Acre</td>
+            <td>75-87</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Rondonia</td>
+            <td>10-7</td>
+            <td>12</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <th colspan="3">Total Players</th>
+                <th>92</th>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username">
+        <button type="submit">Submit</button>
+    </form>
+
+    <form>
+        <label for="fullname">Fullname</label>
+        <input type="text" name="fullname" id="fullname" required>
+
+        <label for="email">Enter your email</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone" placeholder="(+234) 834 347 5456" required>
+
+        <label for="country">Select your country</label>
+        <input type="radio" name="country" id="country" required>
+
+        <label for="password">Enter your password</label>
+        <input type="password" name="password" id="password" required>
+
+        <label for="comment">Your message</label>
+        <textarea name="comment" id="comment" rows="4"></textarea>
+
+        <label for="upadtes">Send me udpates</label>
+        <input type="checkbox" name="updates" id="updates">
+
+
+        <button type="submit">Send Message</button>
+    </form>
+</body>
+
+</html>
