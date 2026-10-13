@@ -44,7 +44,12 @@ p,
 section,
 article {
     margin: 16px;
-    padding: 8px;
+    padding: 6px;
+}
+
+header nav {
+    background-color: var(--secondary-color);
+
 }
 
 .history {
@@ -59,7 +64,7 @@ article {
     grid-row: 1;
     text-align: center;
     /* background-color: var(--accent1-color);
-    color: #fff; */
+    
 }
 
 .history img {
@@ -240,8 +245,8 @@ footer {
 
 .intro {
     text-align: center;
-    background-color: #9e5f2a;
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: black;
     border-radius: 8px;
     padding-top: 10px;
 
@@ -250,7 +255,7 @@ footer {
 .intro h1 {
     color: #fff;
     font-size: 2rem;
-    font-weight: 400px;
+    font-weight: 400;
     margin-bottom: 15px;
 }
 
@@ -266,7 +271,7 @@ footer {
 
 .content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
     align-items: start;
     gap: 30px;
     margin: 0;
@@ -309,7 +314,7 @@ footer {
 }
 
 .form-row input {
-    width: 100%;
+    width: 80%;
     font: inherit;
     padding: 8px;
     height: 30px;
@@ -319,28 +324,24 @@ footer {
 .purpose-row {
     margin: 10px 0;
     display: grid;
-    grid-template-columns: 75px 1fr;
-    align-items: start;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
     margin: 0 10px;
-    gap: 8px;
+    gap: 4px;
 
-}
-
-.purpose-row p {
-    align-items: flex-start;
-    padding: 0;
 }
 
 .option {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     gap: 2px;
 }
 
 .purpose-row div {
     display: flex;
-    align-items: center gap: 1px;
+    align-items: center;
+    gap: 1px;
     margin-bottom: 7px;
 }
 
@@ -350,7 +351,7 @@ footer {
 }
 
 .message-row textarea {
-    width: 100%;
+    width: 80%;
     min-height: 60px;
     padding: 8px;
     font: inherit;
@@ -418,4 +419,505 @@ footer {
 
 .employees figcaption {
     font-size: 0.9rem;
+}
+
+/* HOME PAGE */
+.main {
+    width: 100%;
+}
+
+.hero-photo {
+    position: relative;
+}
+
+.hero-photo img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-left: 15px;
+}
+
+.hero-photo h1 {
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    width: 100%;
+    padding: 16px;
+    margin-left: 15px;
+    opacity: 0.9;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: 900;
+    font-size: 78px;
+    z-index: 2;
+}
+
+.hero-photo article {
+    width: 100%;
+    bottom: 12px;
+    background-color: #055a05;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.hero-photo h3 {
+    font-size: 30px;
+}
+
+.hero-photo p {
+    font-size: 20px;
+    color: var(--accent2-color)
+}
+
+.welcome-form {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: #f7f5f5;
+    gap: 25px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid rgb(208, 211, 214);
+    width: 850px;
+}
+
+.welcome {
+    margin-top: 20px;
+    border: 1px;
+    border-radius: 6px;
+    padding: 10px;
+    width: 100%;
+    background-color: #72747231;
+}
+
+.welcome h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 30px;
+}
+
+.welcome p {
+    line-height: 1.8;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.form {
+    margin-top: 20px;
+    border: 1px;
+    border-radius: 6px;
+    padding: 20px;
+    width: 92%;
+    background-color: #72747231;
+}
+
+.form fieldset {
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.form h4 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.index input {
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 100%;
+}
+
+.form button {
+    margin-top: 30px;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.form button:hover {
+    background-color: #64aaef;
+}
+
+.trip-container {
+    width: 60%;
+    margin: 30px auto;
+}
+
+.trip-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.trips {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: #72747231;
+
+}
+
+.trips article {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.trips article p {
+    order: 1;
+    line-height: 1;
+    margin-bottom: 15px;
+    color: black;
+    font-size: 1.3rem;
+
+}
+
+.trips article figure {
+    order: 2;
+    margin: 0 0 10px;
+}
+
+.trips article a {
+    order: 3;
+    padding: 6px;
+    background-color: #055a05;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+.trips article img {
+    display: block;
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: auto;
+}
+
+.trips article figcaption {
+    margin-top: 10px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.booking {
+    text-align: center;
+    padding: 2px;
+    width: 90%;
+    border: 1px;
+    background-color: #72747231;
+    margin: 30px auto;
+}
+
+.booking h3 {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bold
+}
+
+.booking p {
+    font-size: 1.5rem;
+    color: black;
+
+}
+
+.booking a {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    padding: 6px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 2rem;
+    margin-bottom: 0;
+
+}
+
+/* TRIP PAGE */
+
+/* Trips page introduction */
+
+main {
+    width: 100%
+}
+
+.trip-basics {
+    text-align: center;
+    padding: 20px;
+    background-color: #264653;
+
+}
+
+.trip-basics h1 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.trip-basics p {
+    max-width: 750px;
+    margin: 0 auto 15px;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.trip-basics a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #f2efe9;
+    color: orangered;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Trip card details */
+.trip-explore {
+    text-align: center;
+
+}
+
+.trip-explore h2 {
+    font-size: 1.5rem;
+    background-color: #264653;
+    color: #eef1f3;
+    padding: 4px;
+}
+
+.trip-explore p {
+    font-weight: 200;
+    font-size: 1rem;
+    padding: 10px;
+    font-size: 1.1rem;
+    color: black;
+    line-height: 28px;
+    text-align: start;
+}
+
+.trip-types {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: stretch;
+
+}
+
+.trip-types article {
+    background-color: #aaa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 6px;
+
+}
+
+.trip-types article p {
+    order: 2;
+    text-align: left;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.trip-types figure {
+    order: 1;
+    text-align: center;
+    margin-top: 2px;
+    font-weight: bold;
+    color: blue;
+    font-size: 1.2rem;
+
+}
+
+/* .trip-types article figure {
+    order: 3;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+
+} */
+
+.trip-types article h3 {
+    margin: 10px 0;
+    font-size: 1.3rem;
+    order: 3;
+}
+
+.trip-types article ul {
+    text-align: left;
+    line-height: 1.6;
+    margin: 18px 20px;
+    padding: 20px;
+    background-color: #d4d1d1;
+    color: blue;
+    margin-top: 0;
+    order: 4;
+
+}
+
+.trip-types article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.trip-types article a {
+    margin: 18px 0 auto;
+    padding: 15px;
+    order: 5;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: white;
+    width: 100%;
+
+}
+
+.trip-types article a:hover {
+    background-color: rgb(74, 74, 216);
+}
+
+/* Rafting trips comparison table */
+
+.available-trips {
+    width: 100%;
+    padding: 35px 3%;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.available-trips h2 {
+    margin-bottom: 15px;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+}
+
+.available-trips p {
+    margin: 0 auto 20px;
+    max-width: 900px;
+    color: black;
+    line-height: 1.8;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.trip-table {
+    width: 100%;
+    min-width: 950px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+.trip-table th,
+.trip-table td {
+    padding: 12px 10px;
+    border: 1px solid #cccccc;
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+.trip-table thead th {
+    background-color: #055a05;
+    color: #ffffff;
+}
+
+.trip-table tbody tr:nth-child(even) {
+    background-color: #eaf0ed;
+}
+
+.trip-table tbody tr:hover {
+    background-color: #fff3cd;
+}
+
+.trip-table td a {
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: #055a05;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.trip-table td a:hover {
+    background-color: #264653;
+}
+
+.trip-table-note {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: black;
+}
+
+/* Safety information */
+.safety {
+    padding: 30px 5%;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.safety h2 {
+    color: #055a05;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.safety p {
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: black;
+}
+
+.safety ul {
+    max-width: 400px;
+    margin: 0 auto;
+    color: black;
+    text-align: start;
+    line-height: 1.5;
 }
