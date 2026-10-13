@@ -464,8 +464,9 @@ footer {
     z-index: 2;
 }
 
-.hero-photo h3 {
+.hero-photo h2 {
     font-size: 30px;
+    color: #fff;
 }
 
 .hero-photo p {
@@ -496,7 +497,7 @@ footer {
     background-color: #72747231;
 }
 
-.welcome h2 {
+.welcome h3 {
     margin-top: 10px;
     margin-bottom: 20px;
     color: var(--primary-color);
@@ -636,7 +637,7 @@ footer {
     margin: 30px auto;
 }
 
-.booking h5 {
+.booking h3 {
     color: black;
     font-size: 2.5rem;
     font-weight: bold
